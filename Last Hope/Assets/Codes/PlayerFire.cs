@@ -8,7 +8,7 @@ public class Boundary
 {
     public float xMin, xMax, yMax, yMin;//  andazashoon motagier nesbat be unity
 }
-public class player : MonoBehaviour
+public class PlayerFire : MonoBehaviour
 {
     public int fireLevel = 1;//power shelik
     public Boundary boundary;
