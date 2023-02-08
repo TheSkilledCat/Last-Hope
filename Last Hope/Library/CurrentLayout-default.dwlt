@@ -19,7 +19,11 @@ MonoBehaviour:
     width: 1904
     height: 981
   m_ShowMode: 4
+<<<<<<< Updated upstream
   m_Title: Game
+=======
+  m_Title: Project
+>>>>>>> Stashed changes
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +52,11 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
+<<<<<<< Updated upstream
   controlID: 45
+=======
+  controlID: 65
+>>>>>>> Stashed changes
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -225,7 +233,11 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
+<<<<<<< Updated upstream
   controlID: 46
+=======
+  controlID: 66
+>>>>>>> Stashed changes
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -250,7 +262,11 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
+<<<<<<< Updated upstream
   controlID: 47
+=======
+  controlID: 37
+>>>>>>> Stashed changes
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -316,21 +332,34 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< Updated upstream
     - Assets
+=======
+    - Assets/Scripts
+>>>>>>> Stashed changes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
+<<<<<<< Updated upstream
   - Assets
+=======
+  - Assets/Scripts
+>>>>>>> Stashed changes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\LENOVO\Desktop\Last Hope\Last-Hope\Last Hope
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< Updated upstream
     m_SelectedIDs: 24420000
     m_LastClickedID: 16932
+=======
+    m_SelectedIDs: 38420000
+    m_LastClickedID: 16952
+>>>>>>> Stashed changes
     m_ExpandedIDs: 000000002442000026420000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -542,9 +571,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< Updated upstream
     m_Target: {x: 921.21765, y: 348.1723, z: -234.06752}
     speed: 2
     m_Value: {x: 904.33026, y: 351.43668, z: -232.76434}
+=======
+    m_Target: {x: 1026.9418, y: 492.0544, z: -153.59343}
+    speed: 2
+    m_Value: {x: 1009.3067, y: 491.8301, z: -152.16916}
+>>>>>>> Stashed changes
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -595,9 +630,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< Updated upstream
     m_Target: 302.62787
     speed: 2
     m_Value: 289.59604
+=======
+    m_Target: 330.74643
+    speed: 2
+    m_Value: 316.50375
+>>>>>>> Stashed changes
   m_Ortho:
     m_Target: 1
     speed: 2
