@@ -21,7 +21,8 @@ public class EnemyShooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (tmbtshts <= 0)
+        float distance = Vector3.Distance(playerg.transform.position, transform.position);
+        if (tmbtshts <= 0 && distance <= range)
         {
             Instantiate(bullet,transform.position, Quaternion.identity);
             tmbtshts=timebeetweenshots;

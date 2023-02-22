@@ -12,7 +12,6 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         player=GameObject.FindGameObjectWithTag("Player").transform;
-        target = new Vector3(player.position.x,player.position.y,player.position.z); 
     }
 
     // Update is called once per frame
