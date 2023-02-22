@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 779847472446634159}
   - component: {fileID: 8932803509474175729}
   - component: {fileID: 8043732622329152993}
+  - component: {fileID: 3038967200405558627}
   m_Layer: 0
   m_Name: Soldier-TYPE1 1
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 4590312619719256057}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 17.2, y: 18.4, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -93,13 +94,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4590312619719256057}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f04c24de7ddbeec449b94b99a00c893a, type: 3}
+  m_Script: {fileID: 11500000, guid: d6456c5c13a82c443a03a1b076727628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 0
-  playerg: {fileID: 4590312619719256057}
-  bullet: {fileID: 0}
-  timebeetweenshots: 0
+  range: 1000
+  playerg: {fileID: 869412113396657583, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
+  bullet: {fileID: 3961472727779354558, guid: fd0171ee67b7f48789529728fc204de7, type: 3}
+  timebeetweenshots: 1
 --- !u!50 &8043732622329152993
 Rigidbody2D:
   serializedVersion: 4
@@ -115,9 +116,17 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0.05
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!222 &3038967200405558627
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4590312619719256057}
+  m_CullTransparentMesh: 1
