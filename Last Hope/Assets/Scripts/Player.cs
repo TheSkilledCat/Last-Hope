@@ -60,4 +60,28 @@ public class Player : MonoBehaviour
             }
         }
     }
+        //Declare variables
+    public int maxHealth = 100;
+    public int currentHealth;
+
+    //Function for health
+    public void TakeDamage(int damage){
+        currentHealth -= damage;
+        if(currentHealth <= 0){
+            currentHealth = 0;
+            Die();
+        }
+    }
+
+    public void Heal(int healAmount){
+        currentHealth += healAmount;
+        if(currentHealth > maxHealth){
+            currentHealth = maxHealth;
+        }
+    }
+
+    public void Die(){
+        //Do something when player dies
+        Destroy(gameObject);
+    }
 }

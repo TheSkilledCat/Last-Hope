@@ -17,7 +17,6 @@ public class Obstacle : MonoBehaviour
     {
         if (Time.time > SpawnTime) 
         {
-            print("hhh");
             spawn();
             SpawnTime= Time.time + timeBetweenSpawn;
         }
