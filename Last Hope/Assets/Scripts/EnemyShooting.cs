@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyShooting : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class EnemyShooting : MonoBehaviour
     private float tmbtshts;
     private Transform player;
     public float lifetime;
+
 
     // Start is called before the first frame update
     void Start()
@@ -57,9 +59,9 @@ public class EnemyShooting : MonoBehaviour
             currentHealth = maxHealth;
         }
     }
-
     public void Die(){
         //Do something when player dies
         Destroy(gameObject);
+        GameVars.score += 10;
     }
 }
