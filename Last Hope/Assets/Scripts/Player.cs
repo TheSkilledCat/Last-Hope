@@ -76,11 +76,11 @@ public class Player : MonoBehaviour
     public void TakeDamage(int damage){
         currentHealth -= damage;
         GameVars.health -= damage;
-        tempstr="" ;
+        tempstr = "" ;
         Debug.Log(GameVars.health);
         for (int i = 0; i < GameVars.health; i++)
         {
-            tempstr=tempstr+"❤";
+            tempstr = tempstr + "❤";
         }
         Debug.Log(tempstr);
         health_txt.text = tempstr;
@@ -93,11 +93,11 @@ public class Player : MonoBehaviour
     public void Heal(int healAmount){
         currentHealth += healAmount;
         GameVars.health += healAmount;
-        tempstr="" ;
+        tempstr = "" ;
         Debug.Log(GameVars.health);
         for (int i = 0; i < GameVars.health; i++)
         {
-            tempstr=tempstr+"❤";
+            tempstr = tempstr + "❤";
         }
         Debug.Log(tempstr);
         health_txt.text = tempstr;

@@ -17,7 +17,7 @@ public class EnemyShooting : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        tmbtshts=timebeetweenshots;
+        tmbtshts = timebeetweenshots;
     }
 
     // Update is called once per frame
@@ -28,10 +28,10 @@ public class EnemyShooting : MonoBehaviour
         if (tmbtshts <= 0 && distance <= range)
         {
             Instantiate(bullet,transform.position, Quaternion.identity);
-            tmbtshts=timebeetweenshots;
+            tmbtshts = timebeetweenshots;
         }else
         {
-            tmbtshts-=Time.deltaTime;
+            tmbtshts -= Time.deltaTime;
         }
         lifetime -= Time.deltaTime;
         if (lifetime <= 0f)

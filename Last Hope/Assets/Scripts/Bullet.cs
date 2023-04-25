@@ -14,8 +14,8 @@ public class Bullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player=GameObject.FindGameObjectWithTag("Player").transform;
-        target = new Vector3(player.position.x,player.position.y,player.position.z); 
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        target = new Vector3(player.position.x ,player.position.y, player.position.z); 
         direction = player.transform.position - transform.position;
     }
 
