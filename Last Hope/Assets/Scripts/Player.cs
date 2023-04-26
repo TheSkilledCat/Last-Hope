@@ -22,13 +22,15 @@ public class Player : MonoBehaviour
     private string tempstr;
 
     public Text score_txt; // text for score
-
+    public Text Scoretxt;
+    public Text Highestscoretxt;
     public Text health_txt;
 
     // Start is called before the first frame update
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
+        Highestscoretxt.text = GameVars.highestscore.ToString();
     }
 
     // Update is called once per frame
@@ -67,6 +69,7 @@ public class Player : MonoBehaviour
             }
         }
         score_txt.text = GameVars.score.ToString();
+        Scoretxt.text = GameVars.score.ToString();
     }
         //Declare variables
     public int maxHealth = 100;
@@ -108,6 +111,11 @@ public class Player : MonoBehaviour
 
     public void Die(){
         //Do something when player dies
+        if (GameVars.score >= GameVars.highestscore){
+            GameVars.highestscore=GameVars.score;
+            Highestscoretxt.text = GameVars.score.ToString();
+            PlayerPrefs.SetInt("highestscore",GameVars.highestscore);
+        }
         Destroy(gameObject);
     }
 }

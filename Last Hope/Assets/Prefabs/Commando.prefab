@@ -110,6 +110,8 @@ MonoBehaviour:
   - {fileID: 832866523614983475}
   fireRate: 0.2
   score_txt: {fileID: 0}
+  Scoretxt: {fileID: 0}
+  Highestscoretxt: {fileID: 0}
   health_txt: {fileID: 0}
   maxHealth: 100
   currentHealth: 100
@@ -184,7 +186,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 832866523614983474}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.08, y: 0.5, z: 0}
+  m_LocalPosition: {x: -0.04, y: 0.19, z: 0}
   m_LocalScale: {x: 0.6666667, y: 0.6666667, z: 0.6666667}
   m_Children: []
   m_Father: {fileID: 832866523275895939}
