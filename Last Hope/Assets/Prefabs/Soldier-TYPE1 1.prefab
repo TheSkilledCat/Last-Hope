@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5503892590664505601}
   - component: {fileID: 4421180784644122812}
   - component: {fileID: 1068594343287490158}
+  - component: {fileID: 7435662929610717168}
   m_Layer: 0
   m_Name: Soldier-TYPE1 1
   m_TagString: Enemy
@@ -116,10 +117,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
-  m_GravityScale: 0.05
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -159,3 +160,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.3, y: 0.3363128}
   m_EdgeRadius: 0
+--- !u!114 &7435662929610717168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8176545548045351755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19942f3a139da144a93d56e08c8bcab0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 10
