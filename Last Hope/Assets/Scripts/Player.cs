@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Audio;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 [System.Serializable]
 
@@ -31,8 +33,8 @@ public class Player : MonoBehaviour
     {
         rig = GetComponent<Rigidbody2D>();
         Highestscoretxt.text = GameVars.highestscore.ToString();
-    }
 
+    }
     // Update is called once per frame
     void Update()
     {
@@ -47,9 +49,11 @@ public class Player : MonoBehaviour
             //-----------------------------------------------
             if (fireLevel >= 1)
             {
+
                 //copy of object prefab and send itfrom firepoint position
                 //ba ijad folder prefab va drag crakter too folder prefab mishe
                 Instantiate(playerBullet, firepoints[0].position, firepoints[0].rotation);
+
             }
             //*******************************************************************************
             //copy of object prefab and send itfrom firepoint position
@@ -60,6 +64,7 @@ public class Player : MonoBehaviour
             {
                 Instantiate(playerBullet, firepoints[0].position, firepoints[0].rotation);
                 Instantiate(playerBullet, firepoints[1].position, firepoints[1].rotation);
+
             }
             if (fireLevel >= 3)
             {
