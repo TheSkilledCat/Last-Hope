@@ -2032,6 +2032,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1401331158}
     - target: {fileID: 832866523275895964, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
+      propertyPath: fireRate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 832866523275895964, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
       propertyPath: maxHealth
       value: 10
       objectReference: {fileID: 0}
