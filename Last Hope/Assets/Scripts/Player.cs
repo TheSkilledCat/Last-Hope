@@ -13,6 +13,10 @@ public class Boundary
 }
 public class Player : MonoBehaviour
 {
+
+    public AudioSource ac1;
+    public AudioSource ac2;
+    public AudioSource ac3;
     public int fireLevel = 1;//power shelik
     public Boundary boundary;
     public float speed;
@@ -53,7 +57,7 @@ public class Player : MonoBehaviour
                 //copy of object prefab and send itfrom firepoint position
                 //ba ijad folder prefab va drag crakter too folder prefab mishe
                 Instantiate(playerBullet, firepoints[0].position, firepoints[0].rotation);
-
+                ac1.Play();
             }
             //*******************************************************************************
             //copy of object prefab and send itfrom firepoint position
@@ -64,13 +68,14 @@ public class Player : MonoBehaviour
             {
                 Instantiate(playerBullet, firepoints[0].position, firepoints[0].rotation);
                 Instantiate(playerBullet, firepoints[1].position, firepoints[1].rotation);
-
+                ac2.Play();
             }
             if (fireLevel >= 3)
             {
                 Instantiate(playerBullet, firepoints[0].position, firepoints[0].rotation);
                 Instantiate(playerBullet, firepoints[1].position, firepoints[1].rotation);
                 Instantiate(playerBullet, firepoints[2].position, firepoints[2].rotation);
+                ac3.Play();
             }
         }
         score_txt.text = GameVars.score.ToString();
