@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 [System.Serializable]
 
@@ -21,7 +22,7 @@ public class Player : MonoBehaviour
     private float nextFire;//tir bad
     private string tempstr;
 
-    public Text score_txt; // text for score
+    public TextMeshProUGUI score_txt; // text for score
     public Text Scoretxt;
     public Text Highestscoretxt;
     public Text health_txt;
@@ -68,6 +69,7 @@ public class Player : MonoBehaviour
                 Instantiate(playerBullet, firepoints[2].position, firepoints[2].rotation);
             }
         }
+        score_txt.SetText(GameVars.score.ToString());
         score_txt.text = GameVars.score.ToString();
         Scoretxt.text = GameVars.score.ToString();
     }

@@ -791,7 +791,7 @@ GameObject:
   - component: {fileID: 1157401192}
   m_Layer: 5
   m_Name: ScoreValue
-  m_TagString: Untagged
+  m_TagString: Score_txt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2010,7 +2010,7 @@ PrefabInstance:
     - target: {fileID: 832866523275895964, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
       propertyPath: score_txt
       value: 
-      objectReference: {fileID: 1728444258}
+      objectReference: {fileID: 1157401192}
     - target: {fileID: 832866523275895964, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
       propertyPath: health_txt
       value: 
