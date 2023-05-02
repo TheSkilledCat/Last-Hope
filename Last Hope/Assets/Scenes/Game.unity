@@ -1705,6 +1705,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2035990105}
   m_CullTransparentMesh: 1
+--- !u!1 &2125895724 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 832866523275895937, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
+  m_PrefabInstance: {fileID: 832866523554141996}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2125895725
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125895724}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 46568133de515fb41993fac3ce82fe8a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &832866523554141996
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1765,9 +1789,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1401331158}
     - target: {fileID: 832866523275895964, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
-      propertyPath: maxHealth
-      value: 10
-      objectReference: {fileID: 0}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 2125895725}
     - target: {fileID: 832866523275895964, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
       propertyPath: score_txt
       value: 
@@ -1777,26 +1801,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 344943365}
     - target: {fileID: 832866523275895964, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
-      propertyPath: boundary.xMax
-      value: 8.441
-      objectReference: {fileID: 0}
-    - target: {fileID: 832866523275895964, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
-      propertyPath: boundary.xMin
-      value: -8.441
-      objectReference: {fileID: 0}
-    - target: {fileID: 832866523275895964, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
-      propertyPath: boundary.yMax
-      value: 4.321
-      objectReference: {fileID: 0}
-    - target: {fileID: 832866523275895964, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
-      propertyPath: boundary.yMin
-      value: -4.321
-      objectReference: {fileID: 0}
-    - target: {fileID: 832866523275895964, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
-      propertyPath: currentHealth
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 832866523275895964, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
       propertyPath: Highestscoretxt
       value: 
       objectReference: {fileID: 770656600}
@@ -1804,22 +1808,6 @@ PrefabInstance:
       propertyPath: paue_menu_score_txt
       value: 
       objectReference: {fileID: 1401331158}
-    - target: {fileID: 832866523275895965, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
-      propertyPath: m_Size.x
-      value: 0.30472898
-      objectReference: {fileID: 0}
-    - target: {fileID: 832866523275895965, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
-      propertyPath: m_Size.y
-      value: 0.35112435
-      objectReference: {fileID: 0}
-    - target: {fileID: 832866523275895965, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.012638561
-      objectReference: {fileID: 0}
-    - target: {fileID: 832866523275895965, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.09749764
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
 --- !u!1 &1036863884313102000

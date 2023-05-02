@@ -100,10 +100,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireLevel: 1
   boundary:
-    xMin: -10000
-    xMax: 10000
-    yMax: 10000
-    yMin: -10000
+    xMin: -8.441
+    xMax: 8.441
+    yMax: 4.321
+    yMin: -4.321
   speed: 5
   playerBullet: {fileID: 1703669452387435625, guid: 8564bc901db582c4aa1dfe31a1ade6b4, type: 3}
   firepoints:
@@ -113,8 +113,9 @@ MonoBehaviour:
   Scoretxt: {fileID: 0}
   Highestscoretxt: {fileID: 0}
   health_txt: {fileID: 0}
-  maxHealth: 100
-  currentHealth: 100
+  animator: {fileID: 0}
+  maxHealth: 10
+  currentHealth: 10
 --- !u!50 &832866523275895966
 Rigidbody2D:
   serializedVersion: 4
@@ -149,7 +150,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.011816673, y: -0.10009587}
+  m_Offset: {x: -0.012638561, y: -0.09749764}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -160,7 +161,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.29962003, y: 0.33971357}
+  m_Size: {x: 0.30472898, y: 0.35112435}
   m_EdgeRadius: 0
 --- !u!1 &832866523614983474
 GameObject:

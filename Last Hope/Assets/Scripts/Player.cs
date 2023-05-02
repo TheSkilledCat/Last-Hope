@@ -26,6 +26,8 @@ public class Player : MonoBehaviour
     public Text Highestscoretxt;
     public Text health_txt;
 
+    public Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -47,6 +49,7 @@ public class Player : MonoBehaviour
             //-----------------------------------------------
             if (fireLevel >= 1)
             {
+                animator.Play("player-shoot");
                 //copy of object prefab and send itfrom firepoint position
                 //ba ijad folder prefab va drag crakter too folder prefab mishe
                 Instantiate(playerBullet, firepoints[0].position, firepoints[0].rotation);
