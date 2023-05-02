@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fc7815f7-f706-49fa-a462-c99a96d6126b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Last Hope/Assets/Fonts/Last-Hope.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Last Hope/Assets/Fonts/Last-Hope.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Assets/Images/Gold.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Last Hope/Assets/Images/Gold.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Assets/Images/GreenGold.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Last Hope/Assets/Images/GreenGold.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Last Hope/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Last Hope/Assets/Scenes/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Assets/Scripts/GameVars.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Last Hope/Assets/Scripts/GameVars.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Last Hope/Assets/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Last Hope/Library/ArtifactDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/Artifacts/01/01ac090ea6df13b0646c5939ff903cf5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/Artifacts/0d/0d895cc68df91c40eebc15a1cb8e6fe0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/Artifacts/14/1401c1d4a9e0c2e0f685e34228e5abea" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/Artifacts/23/2375be99e2d48eceabcda6833937c9db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/Artifacts/25/25e4f25b152d4fb22489c86e06e2dcfa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/Artifacts/2a/2a9e86dea897624da8f92cfe1676b910" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/Artifacts/31/316a3cb4f94108afdd9771944c79bb38" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/Artifacts/3f/3ffc2074fa283c235315bc4559974b19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/Artifacts/4a/4a7723c9d84211dd92825239e93f310c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/Artifacts/4c/4c814e30bb2b84279af8ff48c0d67182" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/Artifacts/4e/4ec8d7ac982a8af41a649cf435da74cb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/Artifacts/55/550ec9b54d33468650a070f78429f1ba" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/Artifacts/57/57b6d0971fd6ded77c538c08ce4a0633" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/Artifacts/67/675e418074da6cbc2e78e38fa6314616" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/Artifacts/72/72268c31480362badedb4b83fbad8f93" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/Artifacts/7b/7b72137be2031e2b0ffa91fc386c1450" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/Artifacts/86/869cfea5272f2dfa58cae691dce46b47" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/Artifacts/a7/a76eda7afcd2506b8a42d9c111ff45c9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/Artifacts/bd/bd3b03d1e8868f4dac8af0a5d96706d9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/Artifacts/c0/c0ea67e53bc2ba0f6433d2f9d7585577" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/Artifacts/d2/d2abce830b0cb8bfa20c5ec12a6469af" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/Artifacts/d9/d9d9829c1beee72b7d9c06268988e2e2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/Artifacts/e2/e20f5b9ba53bab64ee9c15caa19bbce7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/Artifacts/e7/e72ea2f778e19e14ce8fdb03b72dc393" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/Artifacts/ec/ec39164766b6c28c39178582475e0c13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/Artifacts/f4/f473b9ea47fd01dc20b753eb3ed6a2d9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/Artifacts/f8/f889df14c1f0496cfbe4407a92a87e3a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/Artifacts/fe/fe85ede4e51ff7998bd4bec11a53d425" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/Artifacts/ff/ff0e17fc682c77a4be4e330d2bda9e67" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Last Hope/Library/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/PackageManager/ProjectCache" beforeDir="false" afterPath="$PROJECT_DIR$/Last Hope/Library/PackageManager/ProjectCache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/PackageManager/ProjectCache.md5" beforeDir="false" afterPath="$PROJECT_DIR$/Last Hope/Library/PackageManager/ProjectCache.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Last Hope/Library/SceneVisibilityState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Last Hope/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/ScriptAssemblies/BuiltinAssemblies.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Last Hope/Library/SourceAssetDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" beforeDir="false" afterPath="$PROJECT_DIR$/Last Hope/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json" beforeDir="false" afterPath="$PROJECT_DIR$/Last Hope/Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Last Hope/Logs/AssetImportWorker0-prev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Last Hope/Logs/AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Last Hope/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Last Hope/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Last Hope/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Last Hope/UserSettings/EditorUserSettings.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Last Hope/Assets/Scripts/GameVars.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Last Hope/Assets/Scripts/Player.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Last Hope/Assets/Scripts/bullet1.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2PEpxkZOptGEYhgbkUy84UZTszv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fc7815f7-f706-49fa-a462-c99a96d6126b" name="Changes" comment="" />
+      <created>1683032344788</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683032344788</updated>
+      <workItem from="1683032348009" duration="676000" />
+      <workItem from="1683042082258" duration="70000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

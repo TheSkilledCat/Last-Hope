@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 [System.Serializable]
 
@@ -21,16 +22,16 @@ public class Player : MonoBehaviour
     private float nextFire;//tir bad
     private string tempstr;
 
-    public Text score_txt; // text for score
+    public TextMeshProUGUI scoreText; // text for score
     public Text Scoretxt;
-    public Text Highestscoretxt;
+    public TextMeshProUGUI highestScoreText;
     public Text health_txt;
 
     // Start is called before the first frame update
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
-        Highestscoretxt.text = GameVars.highestscore.ToString();
+        highestScoreText.text = GameVars.highestScore.ToString();
     }
 
     // Update is called once per frame
@@ -40,7 +41,7 @@ public class Player : MonoBehaviour
         rig.position = new Vector2(Mathf.Clamp(rig.position.x, boundary.xMin, boundary.xMax),
                                    Mathf.Clamp(rig.position.y, boundary.yMin, boundary.yMax));//marze
         //when we push left mouse button then we should shoot
-        if(Input.GetButton("Fire1")&&Time.time> nextFire)//braye bullet va mostamar boodanesh   //GetButtonDown
+        if (Input.GetButton("Fire1") && Time.time> nextFire)//braye bullet va mostamar boodanesh   //GetButtonDown
         {
             //zaman bandi golole
             nextFire = Time.time + fireRate;
@@ -68,8 +69,8 @@ public class Player : MonoBehaviour
                 Instantiate(playerBullet, firepoints[2].position, firepoints[2].rotation);
             }
         }
-        score_txt.text = GameVars.score.ToString();
-        Scoretxt.text = GameVars.score.ToString();
+        scoreText.SetText(GameVars.score.ToString());
+        // scoreText.text = GameVars.score.ToString();
     }
         //Declare variables
     public int maxHealth = 100;
@@ -111,10 +112,10 @@ public class Player : MonoBehaviour
 
     public void Die(){
         //Do something when player dies
-        if (GameVars.score >= GameVars.highestscore){
-            GameVars.highestscore=GameVars.score;
-            Highestscoretxt.text = GameVars.score.ToString();
-            PlayerPrefs.SetInt("highestscore",GameVars.highestscore);
+        if (GameVars.score >= GameVars.highestScore){
+            GameVars.highestScore = GameVars.score;
+            highestScoreText.text = GameVars.score.ToString();
+            PlayerPrefs.SetInt("highestScore", GameVars.highestScore);
         }
         Destroy(gameObject);
     }
