@@ -1228,47 +1228,77 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1413057760}
-  - component: {fileID: 1413057761}
-  m_Layer: 0
-  m_Name: Medkit Spawner
+  - component: {fileID: 1460732155}
+  - component: {fileID: 1460732157}
+  - component: {fileID: 1460732156}
+  m_Layer: 5
+  m_Name: HighestScore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1413057760
-Transform:
+--- !u!224 &1460732155
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1413057759}
+  m_GameObject: {fileID: 1460732154}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 4, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 9189419803819211770}
-  m_RootOrder: 1
+  m_Father: {fileID: 1485166775}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1413057761
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -85.5612, y: 36}
+  m_SizeDelta: {x: 422.0451, y: 79.924}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1460732156
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1413057759}
+  m_GameObject: {fileID: 1460732154}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d94823b15ae927a4baebe1035683926a, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 3477976520348503337, guid: 578105960fc7ea9408b0fbd2ae2e28fd, type: 3}
-  minX: -4
-  maxX: 4
-  maxY: 0
-  minY: 0
-  timeBetweenSpawn: 10
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 20fc2c9cff6cbce4a9c0c94fae48346a, type: 3}
+    m_FontSize: 65
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 76
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Highest Score : '
+--- !u!222 &1460732157
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460732154}
+  m_CullTransparentMesh: 1
 --- !u!1 &1485166774
 GameObject:
   m_ObjectHideFlags: 0
@@ -2098,8 +2128,14 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2035990105}
   m_CullTransparentMesh: 1
---- !u!1 &2065812806
+--- !u!1 &2125895724 stripped
 GameObject:
+  m_CorrespondingSourceObject: {fileID: 832866523275895937, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
+  m_PrefabInstance: {fileID: 832866523554141996}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2125895725
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2292,9 +2328,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 832866523275895964, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
-      propertyPath: maxHealth
-      value: 10
-      objectReference: {fileID: 0}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 2125895725}
     - target: {fileID: 832866523275895964, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
       propertyPath: scoreText
       value: 
@@ -2307,26 +2343,6 @@ PrefabInstance:
       propertyPath: health_txt
       value: 
       objectReference: {fileID: 344943365}
-    - target: {fileID: 832866523275895964, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
-      propertyPath: boundary.xMax
-      value: 8.441
-      objectReference: {fileID: 0}
-    - target: {fileID: 832866523275895964, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
-      propertyPath: boundary.xMin
-      value: -8.441
-      objectReference: {fileID: 0}
-    - target: {fileID: 832866523275895964, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
-      propertyPath: boundary.yMax
-      value: 4.321
-      objectReference: {fileID: 0}
-    - target: {fileID: 832866523275895964, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
-      propertyPath: boundary.yMin
-      value: -4.321
-      objectReference: {fileID: 0}
-    - target: {fileID: 832866523275895964, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
-      propertyPath: currentHealth
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 832866523275895964, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
       propertyPath: Highestscoretxt
       value: 
@@ -2721,7 +2737,7 @@ MonoBehaviour:
   maxX: 4
   maxY: 0
   minY: 0
-  timeBetweenSpawn: 100
+  timeBetweenSpawn: 2
 --- !u!4 &9189419803709257879
 Transform:
   m_ObjectHideFlags: 0
@@ -2764,7 +2780,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9189419803709257879}
-  - {fileID: 1413057760}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
