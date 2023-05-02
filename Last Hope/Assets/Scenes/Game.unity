@@ -862,22 +862,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 832866523275895937, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
   m_PrefabInstance: {fileID: 832866523554141996}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1165576139
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1165576133}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52dabc3ecf909d540b54a1f4ef4cfb20, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ac1: {fileID: 1165576140}
-  ac2: {fileID: 1165576142}
-  ac3: {fileID: 1165576141}
-  firerate: 1
 --- !u!82 &1165576140 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 8942017921061058575, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
@@ -2027,6 +2011,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 832866523275895964, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
+      propertyPath: ac1
+      value: 
+      objectReference: {fileID: 1165576140}
+    - target: {fileID: 832866523275895964, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
+      propertyPath: ac2
+      value: 
+      objectReference: {fileID: 1165576140}
+    - target: {fileID: 832866523275895964, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
+      propertyPath: ac3
+      value: 
+      objectReference: {fileID: 1165576140}
     - target: {fileID: 832866523275895964, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
       propertyPath: Scoretxt
       value: 
