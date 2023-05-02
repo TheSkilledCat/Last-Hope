@@ -7,10 +7,10 @@ public class LoadData : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        if (!PlayerPrefs.HasKey("highestscore")){
-            PlayerPrefs.SetInt("highestscore",0);
+        if (!PlayerPrefs.HasKey("highestScore")){
+            PlayerPrefs.SetInt("highestScore",0);
         }
-        GameVars.highestscore = PlayerPrefs.GetInt("highestscore");
+        GameVars.highestScore = PlayerPrefs.GetInt("highestScore");
     }
 
     // Update is called once per frame
