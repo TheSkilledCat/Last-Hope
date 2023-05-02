@@ -862,6 +862,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 832866523275895937, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}
   m_PrefabInstance: {fileID: 832866523554141996}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1165576139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165576133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65380181b52ea604bb00b64170b34e08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ac1: {fileID: 1165576140}
+  ac2: {fileID: 1165576140}
+  ac3: {fileID: 1165576140}
+  fireLevel: 1
+  boundary:
+    xMin: 0
+    xMax: 0
+    yMax: 0
+    yMin: 0
+  speed: 1
+  playerBullet: {fileID: 3961472727779354558, guid: fd0171ee67b7f48789529728fc204de7, type: 3}
+  firepoints: []
+  fireRate: 1
+  score_txt: {fileID: 1728444258}
+  Scoretxt: {fileID: 1401331158}
+  Highestscoretxt: {fileID: 770656600}
+  health_txt: {fileID: 344943365}
+  maxHealth: 100
+  currentHealth: 6
 --- !u!82 &1165576140 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 8942017921061058575, guid: 79072dacb663a7b44b04255c0ca63f25, type: 3}

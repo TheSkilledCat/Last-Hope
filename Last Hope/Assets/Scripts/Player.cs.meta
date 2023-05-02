@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 65380181b52ea604bb00b64170b34e08
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - ac1: {instanceID: 0}
+  - ac2: {instanceID: 0}
+  - ac3: {instanceID: 0}
+  - playerBullet: {fileID: 3961472727779354558, guid: fd0171ee67b7f48789529728fc204de7, type: 3}
+  - score_txt: {instanceID: 0}
+  - Scoretxt: {instanceID: 0}
+  - Highestscoretxt: {instanceID: 0}
+  - health_txt: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
