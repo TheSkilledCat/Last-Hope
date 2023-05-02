@@ -1081,55 +1081,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1401331156}
   m_CullTransparentMesh: 1
---- !u!1 &1413057759
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1413057760}
-  - component: {fileID: 1413057761}
-  m_Layer: 0
-  m_Name: Medkit Spawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1413057760
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1413057759}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 4, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 9189419803819211770}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1413057761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1413057759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d94823b15ae927a4baebe1035683926a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  obstacle: {fileID: 3477976520348503337, guid: 578105960fc7ea9408b0fbd2ae2e28fd, type: 3}
-  minX: -4
-  maxX: 4
-  maxY: 0
-  minY: 0
-  timeBetweenSpawn: 10
 --- !u!1 &1460732154
 GameObject:
   m_ObjectHideFlags: 0
@@ -2791,7 +2742,7 @@ MonoBehaviour:
   maxX: 4
   maxY: 0
   minY: 0
-  timeBetweenSpawn: 100
+  timeBetweenSpawn: 2
 --- !u!4 &9189419803709257879
 Transform:
   m_ObjectHideFlags: 0
@@ -2834,7 +2785,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9189419803709257879}
-  - {fileID: 1413057760}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

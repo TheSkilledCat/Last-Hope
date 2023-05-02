@@ -13,6 +13,9 @@ public class EnemyShooting : MonoBehaviour
     private Transform player;
     public float lifetime;
 
+    public GameObject medkit;
+    public float medkitspawnchance;
+
 
     // Start is called before the first frame update
     void Start()
@@ -60,6 +63,9 @@ public class EnemyShooting : MonoBehaviour
         }
     }
     public void Die(){
+        if (Random.Range(0f, 1f) <= medkitspawnchance) {
+            Instantiate(medkit,transform.position, Quaternion.identity);
+        }
         //Do something when player dies
         Destroy(gameObject);
         GameVars.score += 10;
