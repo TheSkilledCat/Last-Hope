@@ -12,6 +12,10 @@ public class Boundary
 }
 public class Player : MonoBehaviour
 {
+    public AudioSource ac;
+    public AudioSource ac1;
+    public AudioSource ac2;
+    public AudioSource ac3;
     public int fireLevel = 1;//power shelik
     public Boundary boundary;
     public float speed;
@@ -23,9 +27,17 @@ public class Player : MonoBehaviour
     private string tempstr;
 
     public TextMeshProUGUI scoreText; // text for score
+    public TextMeshProUGUI YourScoreText; // text for score
+    public TextMeshProUGUI HighestScoreDeath; // text for score
     public Text Scoretxt;
     public TextMeshProUGUI highestScoreText;
     public Text health_txt;
+
+    public GameObject DeadMenuUI;
+    public GameObject GameScene;
+
+    public Animator animator;
+
 
     // Start is called before the first frame update
     void Start()
@@ -38,7 +50,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         rig.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * speed;//harekat
-        rig.position = new Vector2(Mathf.Clamp(rig.position.x, boundary.xMin, boundary.xMax),
+        rig.position = new  Vector2(Mathf.Clamp(rig.position.x, boundary.xMin, boundary.xMax),
                                    Mathf.Clamp(rig.position.y, boundary.yMin, boundary.yMax));//marze
         //when we push left mouse button then we should shoot
         if (Input.GetButton("Fire1") && Time.time> nextFire)//braye bullet va mostamar boodanesh   //GetButtonDown
@@ -48,9 +60,11 @@ public class Player : MonoBehaviour
             //-----------------------------------------------
             if (fireLevel >= 1)
             {
+                animator.Play("player-shoot");
                 //copy of object prefab and send itfrom firepoint position
                 //ba ijad folder prefab va drag crakter too folder prefab mishe
                 Instantiate(playerBullet, firepoints[0].position, firepoints[0].rotation);
+                ac1.Play();
             }
             //*******************************************************************************
             //copy of object prefab and send itfrom firepoint position
@@ -61,20 +75,24 @@ public class Player : MonoBehaviour
             {
                 Instantiate(playerBullet, firepoints[0].position, firepoints[0].rotation);
                 Instantiate(playerBullet, firepoints[1].position, firepoints[1].rotation);
+                ac2.Play();
             }
             if (fireLevel >= 3)
             {
                 Instantiate(playerBullet, firepoints[0].position, firepoints[0].rotation);
                 Instantiate(playerBullet, firepoints[1].position, firepoints[1].rotation);
                 Instantiate(playerBullet, firepoints[2].position, firepoints[2].rotation);
+                ac3.Play();
             }
         }
         scoreText.SetText(GameVars.score.ToString());
+        YourScoreText.SetText(GameVars.score.ToString());
         // scoreText.text = GameVars.score.ToString();
     }
         //Declare variables
     public int maxHealth = 100;
     public int currentHealth;
+    public Image[] hearts;
 
     //Function for health
     public void TakeDamage(int damage){
@@ -82,7 +100,7 @@ public class Player : MonoBehaviour
         GameVars.health -= damage;
         tempstr = "" ;
         Debug.Log(GameVars.health);
-        for (int i = 0; i < GameVars.health; i++)
+        for (int i = 0; i < currentHealth; i++)
         {
             tempstr = tempstr + "❤";
         }
@@ -92,6 +110,7 @@ public class Player : MonoBehaviour
             currentHealth = 0;
             Die();
         }
+        UpdateHearts();
     }
 
     public void Heal(int healAmount){
@@ -99,7 +118,7 @@ public class Player : MonoBehaviour
         GameVars.health += healAmount;
         tempstr = "" ;
         Debug.Log(GameVars.health);
-        for (int i = 0; i < GameVars.health; i++)
+        for (int i = 0; i < currentHealth; i++)
         {
             tempstr = tempstr + "❤";
         }
@@ -108,6 +127,7 @@ public class Player : MonoBehaviour
         if(currentHealth > maxHealth){
             currentHealth = maxHealth;
         }
+        UpdateHearts();
     }
 
     public void Die(){
@@ -116,7 +136,29 @@ public class Player : MonoBehaviour
             GameVars.highestScore = GameVars.score;
             highestScoreText.text = GameVars.score.ToString();
             PlayerPrefs.SetInt("highestScore", GameVars.highestScore);
+            GameVars.health=10;
         }
+        HighestScoreDeath.SetText(GameVars.highestScore.ToString());
+        GameVars.score = 0;
+        GameScene.SetActive(false);
+        DeadMenuUI.SetActive(true);
+        Pause();
         Destroy(gameObject);
+    }
+
+    public void Pause()
+    {
+        Time.timeScale = 0f;
+    }
+
+    void UpdateHearts()
+    {
+        for (int i = 0; i < hearts.Length; i++)
+        {
+            if (i < currentHealth)
+                hearts[i].enabled = true;
+            else
+                hearts[i].enabled = false;
+        }
     }
 }

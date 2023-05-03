@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 832866523275895964}
   - component: {fileID: 832866523275895966}
   - component: {fileID: 832866523275895965}
+  - component: {fileID: 867460623380923629}
   m_Layer: 0
   m_Name: Commando
   m_TagString: Player
@@ -75,12 +76,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 29076ae007e8b7747bbf63d981b74758, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fe44b244616cb424da1dd9033d6d70f2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 1
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.64, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -98,23 +99,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 328a7f1e0b993714187514927a83b253, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ac: {fileID: 0}
+  ac1: {fileID: 0}
+  ac2: {fileID: 0}
+  ac3: {fileID: 0}
   fireLevel: 1
   boundary:
-    xMin: -10000
-    xMax: 10000
-    yMax: 10000
-    yMin: -10000
+    xMin: -8.441
+    xMax: 8.441
+    yMax: 4.321
+    yMin: -4.321
   speed: 5
   playerBullet: {fileID: 1703669452387435625, guid: 8564bc901db582c4aa1dfe31a1ade6b4, type: 3}
   firepoints:
   - {fileID: 832866523614983475}
   fireRate: 0.2
-  score_txt: {fileID: 0}
+  scoreText: {fileID: 0}
+  YourScoreText: {fileID: 0}
+  HighestScoreDeath: {fileID: 0}
   Scoretxt: {fileID: 0}
-  Highestscoretxt: {fileID: 0}
+  highestScoreText: {fileID: 0}
   health_txt: {fileID: 0}
-  maxHealth: 100
-  currentHealth: 100
+  DeadMenuUI: {fileID: 0}
+  GameScene: {fileID: 0}
+  animator: {fileID: 0}
+  maxHealth: 10
+  currentHealth: 10
+  hearts: []
 --- !u!50 &832866523275895966
 Rigidbody2D:
   serializedVersion: 4
@@ -149,19 +160,35 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.011816673, y: -0.10009587}
+  m_Offset: {x: -0.012638561, y: -0.09749764}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.64, y: 0.64}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 0.64, y: 0.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.29962003, y: 0.33971357}
+  m_Size: {x: 0.30472898, y: 0.35112435}
   m_EdgeRadius: 0
+--- !u!114 &867460623380923629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832866523275895937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f14f56ffa81476946a108ce1ec9707c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeSlidermusic: {fileID: 0}
+  volumeSliderSFX: {fileID: 0}
+  backGroundSounds: []
+  SFX: []
 --- !u!1 &832866523614983474
 GameObject:
   m_ObjectHideFlags: 0

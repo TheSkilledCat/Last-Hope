@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.UI;
 
 public class EnemyShooting : MonoBehaviour
 {
+    public AudioSource ac;
     public float range;
     private GameObject playerg;
     public GameObject bullet;
@@ -12,6 +14,8 @@ public class EnemyShooting : MonoBehaviour
     private float tmbtshts;
     private Transform player;
     public float lifetime;
+    public GameObject medkit;
+    public float medkitspawnchance;
 
 
     // Start is called before the first frame update
@@ -28,6 +32,7 @@ public class EnemyShooting : MonoBehaviour
         if (tmbtshts <= 0 && distance <= range)
         {
             Instantiate(bullet,transform.position, Quaternion.identity);
+            ac.Play();
             tmbtshts = timebeetweenshots;
         }else
         {
@@ -60,6 +65,9 @@ public class EnemyShooting : MonoBehaviour
         }
     }
     public void Die(){
+        if (Random.Range(0f, 1f) <= medkitspawnchance) {
+            Instantiate(medkit,transform.position, Quaternion.identity);
+        }
         //Do something when player dies
         Destroy(gameObject);
         GameVars.score += 10;
