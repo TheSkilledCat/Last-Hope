@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 832866523275895964}
   - component: {fileID: 832866523275895966}
   - component: {fileID: 832866523275895965}
+  - component: {fileID: 867460623380923629}
   m_Layer: 0
   m_Name: Commando
   m_TagString: Player
@@ -98,6 +99,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 328a7f1e0b993714187514927a83b253, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ac: {fileID: 0}
+  ac1: {fileID: 0}
+  ac2: {fileID: 0}
+  ac3: {fileID: 0}
   fireLevel: 1
   boundary:
     xMin: -8.441
@@ -109,10 +114,14 @@ MonoBehaviour:
   firepoints:
   - {fileID: 832866523614983475}
   fireRate: 0.2
-  score_txt: {fileID: 0}
+  scoreText: {fileID: 0}
+  YourScoreText: {fileID: 0}
+  HighestScoreDeath: {fileID: 0}
   Scoretxt: {fileID: 0}
-  Highestscoretxt: {fileID: 0}
+  highestScoreText: {fileID: 0}
   health_txt: {fileID: 0}
+  DeadMenuUI: {fileID: 0}
+  GameScene: {fileID: 0}
   animator: {fileID: 0}
   maxHealth: 10
   currentHealth: 10
@@ -163,6 +172,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.30472898, y: 0.35112435}
   m_EdgeRadius: 0
+--- !u!114 &867460623380923629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832866523275895937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f14f56ffa81476946a108ce1ec9707c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeSlidermusic: {fileID: 0}
+  volumeSliderSFX: {fileID: 0}
+  backGroundSounds: []
+  SFX: []
 --- !u!1 &832866523614983474
 GameObject:
   m_ObjectHideFlags: 0

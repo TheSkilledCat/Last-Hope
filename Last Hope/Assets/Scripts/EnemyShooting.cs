@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.UI;
 
 public class EnemyShooting : MonoBehaviour
 {
+    public AudioSource ac;
     public float range;
     private GameObject playerg;
     public GameObject bullet;
@@ -12,7 +14,6 @@ public class EnemyShooting : MonoBehaviour
     private float tmbtshts;
     private Transform player;
     public float lifetime;
-
     public GameObject medkit;
     public float medkitspawnchance;
 
@@ -31,6 +32,7 @@ public class EnemyShooting : MonoBehaviour
         if (tmbtshts <= 0 && distance <= range)
         {
             Instantiate(bullet,transform.position, Quaternion.identity);
+            ac.Play();
             tmbtshts = timebeetweenshots;
         }else
         {

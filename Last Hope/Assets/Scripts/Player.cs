@@ -12,6 +12,10 @@ public class Boundary
 }
 public class Player : MonoBehaviour
 {
+    public AudioSource ac;
+    public AudioSource ac1;
+    public AudioSource ac2;
+    public AudioSource ac3;
     public int fireLevel = 1;//power shelik
     public Boundary boundary;
     public float speed;
@@ -45,7 +49,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         rig.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * speed;//harekat
-        rig.position = new Vector2(Mathf.Clamp(rig.position.x, boundary.xMin, boundary.xMax),
+        rig.position = new  Vector2(Mathf.Clamp(rig.position.x, boundary.xMin, boundary.xMax),
                                    Mathf.Clamp(rig.position.y, boundary.yMin, boundary.yMax));//marze
         //when we push left mouse button then we should shoot
         if (Input.GetButton("Fire1") && Time.time> nextFire)//braye bullet va mostamar boodanesh   //GetButtonDown
@@ -59,6 +63,7 @@ public class Player : MonoBehaviour
                 //copy of object prefab and send itfrom firepoint position
                 //ba ijad folder prefab va drag crakter too folder prefab mishe
                 Instantiate(playerBullet, firepoints[0].position, firepoints[0].rotation);
+                ac1.Play();
             }
             //*******************************************************************************
             //copy of object prefab and send itfrom firepoint position
@@ -69,12 +74,14 @@ public class Player : MonoBehaviour
             {
                 Instantiate(playerBullet, firepoints[0].position, firepoints[0].rotation);
                 Instantiate(playerBullet, firepoints[1].position, firepoints[1].rotation);
+                ac2.Play();
             }
             if (fireLevel >= 3)
             {
                 Instantiate(playerBullet, firepoints[0].position, firepoints[0].rotation);
                 Instantiate(playerBullet, firepoints[1].position, firepoints[1].rotation);
                 Instantiate(playerBullet, firepoints[2].position, firepoints[2].rotation);
+                ac3.Play();
             }
         }
         scoreText.SetText(GameVars.score.ToString());
