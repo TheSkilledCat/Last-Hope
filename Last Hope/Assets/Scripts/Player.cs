@@ -34,6 +34,7 @@ public class Player : MonoBehaviour
 
     public Animator animator;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -84,6 +85,7 @@ public class Player : MonoBehaviour
         //Declare variables
     public int maxHealth = 100;
     public int currentHealth;
+    public Image[] hearts;
 
     //Function for health
     public void TakeDamage(int damage){
@@ -101,6 +103,7 @@ public class Player : MonoBehaviour
             currentHealth = 0;
             Die();
         }
+        UpdateHearts();
     }
 
     public void Heal(int healAmount){
@@ -117,6 +120,7 @@ public class Player : MonoBehaviour
         if(currentHealth > maxHealth){
             currentHealth = maxHealth;
         }
+        UpdateHearts();
     }
 
     public void Die(){
@@ -138,5 +142,16 @@ public class Player : MonoBehaviour
     public void Pause()
     {
         Time.timeScale = 0f;
+    }
+
+    void UpdateHearts()
+    {
+        for (int i = 0; i < hearts.Length; i++)
+        {
+            if (i < currentHealth)
+                hearts[i].enabled = true;
+            else
+                hearts[i].enabled = false;
+        }
     }
 }
