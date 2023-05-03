@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 7
   bullet: {fileID: 3961472727779354558, guid: fd0171ee67b7f48789529728fc204de7, type: 3}
-  timebeetweenshots: 1
+  timebeetweenshots: 0.8
   lifetime: 20
   medkit: {fileID: 3477976520348503337, guid: 578105960fc7ea9408b0fbd2ae2e28fd, type: 3}
   medkitspawnchance: 0.2

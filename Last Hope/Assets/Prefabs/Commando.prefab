@@ -109,13 +109,18 @@ MonoBehaviour:
   firepoints:
   - {fileID: 832866523614983475}
   fireRate: 0.2
-  score_txt: {fileID: 0}
+  scoreText: {fileID: 0}
+  YourScoreText: {fileID: 0}
+  HighestScoreDeath: {fileID: 0}
   Scoretxt: {fileID: 0}
-  Highestscoretxt: {fileID: 0}
+  highestScoreText: {fileID: 0}
   health_txt: {fileID: 0}
+  DeadMenuUI: {fileID: 0}
+  GameScene: {fileID: 0}
   animator: {fileID: 0}
   maxHealth: 10
   currentHealth: 10
+  hearts: []
 --- !u!50 &832866523275895966
 Rigidbody2D:
   serializedVersion: 4
