@@ -23,6 +23,8 @@ public class Player : MonoBehaviour
     private string tempstr;
 
     public TextMeshProUGUI scoreText; // text for score
+    public TextMeshProUGUI YourScoreText; // text for score
+    public TextMeshProUGUI HighestScoreDeath; // text for score
     public Text Scoretxt;
     public TextMeshProUGUI highestScoreText;
     public Text health_txt;
@@ -76,6 +78,7 @@ public class Player : MonoBehaviour
             }
         }
         scoreText.SetText(GameVars.score.ToString());
+        YourScoreText.SetText(GameVars.score.ToString());
         // scoreText.text = GameVars.score.ToString();
     }
         //Declare variables
@@ -88,7 +91,7 @@ public class Player : MonoBehaviour
         GameVars.health -= damage;
         tempstr = "" ;
         Debug.Log(GameVars.health);
-        for (int i = 0; i < GameVars.health; i++)
+        for (int i = 0; i < currentHealth; i++)
         {
             tempstr = tempstr + "❤";
         }
@@ -105,7 +108,7 @@ public class Player : MonoBehaviour
         GameVars.health += healAmount;
         tempstr = "" ;
         Debug.Log(GameVars.health);
-        for (int i = 0; i < GameVars.health; i++)
+        for (int i = 0; i < currentHealth; i++)
         {
             tempstr = tempstr + "❤";
         }
@@ -122,9 +125,18 @@ public class Player : MonoBehaviour
             GameVars.highestScore = GameVars.score;
             highestScoreText.text = GameVars.score.ToString();
             PlayerPrefs.SetInt("highestScore", GameVars.highestScore);
+            GameVars.health=10;
         }
+        HighestScoreDeath.SetText(GameVars.highestScore.ToString());
+        GameVars.score = 0;
         GameScene.SetActive(false);
         DeadMenuUI.SetActive(true);
+        Pause();
         Destroy(gameObject);
+    }
+
+    public void Pause()
+    {
+        Time.timeScale = 0f;
     }
 }
