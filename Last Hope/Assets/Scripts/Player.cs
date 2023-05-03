@@ -27,6 +27,9 @@ public class Player : MonoBehaviour
     public TextMeshProUGUI highestScoreText;
     public Text health_txt;
 
+    public GameObject DeadMenuUI;
+    public GameObject GameScene;
+
     public Animator animator;
 
     // Start is called before the first frame update
@@ -120,6 +123,8 @@ public class Player : MonoBehaviour
             highestScoreText.text = GameVars.score.ToString();
             PlayerPrefs.SetInt("highestScore", GameVars.highestScore);
         }
+        GameScene.SetActive(false);
+        DeadMenuUI.SetActive(true);
         Destroy(gameObject);
     }
 }
