@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1068594343287490158}
   - component: {fileID: 7435662929610717168}
   - component: {fileID: 7672377855101498903}
+  - component: {fileID: 5992505839588466482}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -107,6 +108,7 @@ MonoBehaviour:
   lifetime: 20
   medkit: {fileID: 3477976520348503337, guid: 578105960fc7ea9408b0fbd2ae2e28fd, type: 3}
   medkitspawnchance: 0.2
+  animator: {fileID: 5992505839588466482}
   maxHealth: 10
   currentHealth: 10
 --- !u!50 &5503892590664505601
@@ -273,3 +275,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &5992505839588466482
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8176545548045351755}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 539f49c8250265a4faaf4ba9c17bb9bc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

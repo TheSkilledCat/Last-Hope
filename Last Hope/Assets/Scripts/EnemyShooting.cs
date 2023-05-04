@@ -17,6 +17,8 @@ public class EnemyShooting : MonoBehaviour
     public GameObject medkit;
     public float medkitspawnchance;
 
+    public Animator animator;
+
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +33,7 @@ public class EnemyShooting : MonoBehaviour
         float distance = Vector3.Distance(playerg.transform.position, transform.position);
         if (tmbtshts <= 0 && distance <= range)
         {
+            animator.Play("enemy-shoot");
             Instantiate(bullet,transform.position, Quaternion.identity);
             ac.Play();
             tmbtshts = timebeetweenshots;
