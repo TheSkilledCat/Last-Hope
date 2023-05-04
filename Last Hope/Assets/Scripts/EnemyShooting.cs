@@ -31,7 +31,7 @@ public class EnemyShooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        playerg=GameObject.FindGameObjectWithTag("Player");
+        playerg = GameObject.FindGameObjectWithTag("Player");
         float distance = Vector3.Distance(playerg.transform.position, transform.position);
         if (tmbtshts <= 0 && distance <= range)
         {

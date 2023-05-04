@@ -15,7 +15,7 @@ PlayerSettings:
   companyName: Last Hope
   productName: Last Hope
   defaultCursor: {fileID: 2800000, guid: d14391e0a5148384e8edef0871d09d3f, type: 3}
-  cursorHotspot: {x: 12, y: 12}
+  cursorHotspot: {x: 13, y: 13}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1

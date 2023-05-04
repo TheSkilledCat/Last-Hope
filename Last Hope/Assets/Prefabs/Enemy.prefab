@@ -108,8 +108,8 @@ MonoBehaviour:
   lifetime: 20
   medkit: {fileID: 3477976520348503337, guid: 578105960fc7ea9408b0fbd2ae2e28fd, type: 3}
   supermedkit: {fileID: 4730250506356735908, guid: 3a81626bdb69d6448b9dee2f96bc9447, type: 3}
-  medkitspawnchance: 0.25
-  supermedkitspawnchance: 0.03
+  medkitspawnchance: 0.15
+  supermedkitspawnchance: 0.01
   animator: {fileID: 5992505839588466482}
   maxHealth: 10
   currentHealth: 10
@@ -155,7 +155,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.08401899, y: -0.0054314733}
+  m_Offset: {x: -0.09172806, y: -0.004838884}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -166,7 +166,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.3111849, y: 0.26852846}
+  m_Size: {x: 0.288651, y: 0.26022673}
   m_EdgeRadius: 0
 --- !u!114 &7435662929610717168
 MonoBehaviour:
