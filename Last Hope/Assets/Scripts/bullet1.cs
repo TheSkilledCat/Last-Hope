@@ -18,7 +18,7 @@ public class bullet1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb.velocity = Vector2.up * speed;
+        //rb.velocity = Vector2.up * speed;
         lifetime -= Time.deltaTime;
         if (lifetime <= 0f)
         {

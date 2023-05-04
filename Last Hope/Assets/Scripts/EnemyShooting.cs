@@ -12,10 +12,12 @@ public class EnemyShooting : MonoBehaviour
     public GameObject bullet;
     public float timebeetweenshots;
     private float tmbtshts;
-    private Transform player;
+    private Transform[] player;
     public float lifetime;
     public GameObject medkit;
+    public GameObject supermedkit;
     public float medkitspawnchance;
+    public float supermedkitspawnchance;
 
     public Animator animator;
 
@@ -67,12 +69,18 @@ public class EnemyShooting : MonoBehaviour
             currentHealth = maxHealth;
         }
     }
+
     public void Die(){
-        if (Random.Range(0f, 1f) <= medkitspawnchance) {
-            Instantiate(medkit,transform.position, Quaternion.identity);
+        float generatedChance = Random.Range(0f, 1f);
+        if (generatedChance <= supermedkitspawnchance) {
+            Instantiate(supermedkit, transform.position, Quaternion.identity);
         }
+        else if (generatedChance <= medkitspawnchance) {
+            Instantiate(medkit, transform.position, Quaternion.identity);
+        }
+
         //Do something when player dies
         Destroy(gameObject);
-        GameVars.score += 10;
+        GameVars.score += 1;
     }
 }

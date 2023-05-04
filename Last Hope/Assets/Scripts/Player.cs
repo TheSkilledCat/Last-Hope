@@ -38,6 +38,8 @@ public class Player : MonoBehaviour
 
     public Animator animator;
 
+    public float bulletSpeed = 10f;
+
 
     // Start is called before the first frame update
     void Start()
@@ -49,6 +51,15 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //player rotation begins
+        Vector3 mousePosition = Input.mousePosition;
+        mousePosition.z = -Camera.main.transform.position.z;    
+        Vector3 objectPosition = Camera.main.WorldToScreenPoint(transform.position);
+        mousePosition.x -= objectPosition.x;
+        mousePosition.y -= objectPosition.y;
+        float angle = Mathf.Atan2(mousePosition.y, mousePosition.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+        //player rotation done
         rig.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * speed;//harekat
         rig.position = new  Vector2(Mathf.Clamp(rig.position.x, boundary.xMin, boundary.xMax),
                                    Mathf.Clamp(rig.position.y, boundary.yMin, boundary.yMax));//marze
@@ -63,7 +74,10 @@ public class Player : MonoBehaviour
                 animator.Play("player-shoot");
                 //copy of object prefab and send itfrom firepoint position
                 //ba ijad folder prefab va drag crakter too folder prefab mishe
-                Instantiate(playerBullet, firepoints[0].position, firepoints[0].rotation);
+                GameObject bullet = Instantiate(playerBullet, firepoints[0].position, firepoints[0].rotation);
+                bullet.transform.rotation = transform.rotation;
+                Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+                rb.velocity = transform.right * bulletSpeed; 
                 ac1.Play();
             }
             //*******************************************************************************
