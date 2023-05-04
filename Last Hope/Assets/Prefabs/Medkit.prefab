@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heal_amount: 2
+  lifetime: 8
 --- !u!61 &-6143248039424829490
 BoxCollider2D:
   m_ObjectHideFlags: 0

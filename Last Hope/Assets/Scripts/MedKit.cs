@@ -5,8 +5,18 @@ using UnityEngine;
 public class MedKit : MonoBehaviour
 {
     public int heal_amount;
-
+    public float lifetime;
     
+    void Update()
+    {
+        lifetime -= Time.deltaTime;
+        if (lifetime <= 0f)
+        {
+            Destroy(gameObject);
+        }
+    }
+    
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
