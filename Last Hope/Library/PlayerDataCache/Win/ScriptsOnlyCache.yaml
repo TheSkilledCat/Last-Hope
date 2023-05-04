@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AudioManager
     - Bullet
     - BulletRotation
     - DeathMenu
@@ -38,6 +39,14 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -73,6 +82,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -82,51 +95,53 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1462}
+      Script: {instanceID: 1466}
     - Class: 114
-      Script: {instanceID: 1576}
+      Script: {instanceID: 1602}
     - Class: 114
-      Script: {instanceID: 1684}
+      Script: {instanceID: 1710}
     - Class: 114
-      Script: {instanceID: 1742}
+      Script: {instanceID: 1768}
     - Class: 114
-      Script: {instanceID: 1792}
+      Script: {instanceID: 1818}
     - Class: 114
-      Script: {instanceID: 2112}
+      Script: {instanceID: 2138}
     - Class: 114
-      Script: {instanceID: 2484}
+      Script: {instanceID: 2510}
     - Class: 114
-      Script: {instanceID: 2486}
+      Script: {instanceID: 2512}
     - Class: 114
-      Script: {instanceID: 2636}
+      Script: {instanceID: 2662}
     - Class: 114
-      Script: {instanceID: 2678}
+      Script: {instanceID: 2704}
     - Class: 114
-      Script: {instanceID: 2712}
+      Script: {instanceID: 2738}
     - Class: 114
-      Script: {instanceID: 2810}
+      Script: {instanceID: 2836}
     - Class: 114
-      Script: {instanceID: 2892}
+      Script: {instanceID: 2918}
     - Class: 114
-      Script: {instanceID: 3024}
+      Script: {instanceID: 3050}
     - Class: 114
-      Script: {instanceID: 3136}
+      Script: {instanceID: 3162}
     - Class: 114
-      Script: {instanceID: 3168}
+      Script: {instanceID: 3194}
     - Class: 114
-      Script: {instanceID: 3606}
+      Script: {instanceID: 3632}
     - Class: 114
-      Script: {instanceID: 3616}
+      Script: {instanceID: 3642}
     - Class: 114
-      Script: {instanceID: 3726}
+      Script: {instanceID: 3752}
     - Class: 114
-      Script: {instanceID: 3818}
+      Script: {instanceID: 3844}
     - Class: 114
-      Script: {instanceID: 4176}
+      Script: {instanceID: 4202}
     - Class: 114
-      Script: {instanceID: 4910}
+      Script: {instanceID: 4840}
     - Class: 114
-      Script: {instanceID: 4922}
+      Script: {instanceID: 4938}
+    - Class: 114
+      Script: {instanceID: 4950}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -164,6 +179,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 102
       Script: {instanceID: 0}
     - Class: 104
@@ -171,35 +190,37 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1462}
+      Script: {instanceID: 1466}
     - Class: 114
-      Script: {instanceID: 1684}
+      Script: {instanceID: 1710}
     - Class: 114
-      Script: {instanceID: 1792}
+      Script: {instanceID: 1818}
     - Class: 114
-      Script: {instanceID: 2104}
+      Script: {instanceID: 2130}
     - Class: 114
-      Script: {instanceID: 2112}
+      Script: {instanceID: 2138}
     - Class: 114
-      Script: {instanceID: 2484}
+      Script: {instanceID: 2510}
     - Class: 114
-      Script: {instanceID: 2636}
+      Script: {instanceID: 2662}
     - Class: 114
-      Script: {instanceID: 2678}
+      Script: {instanceID: 2704}
     - Class: 114
-      Script: {instanceID: 2810}
+      Script: {instanceID: 2836}
     - Class: 114
-      Script: {instanceID: 3024}
+      Script: {instanceID: 3050}
     - Class: 114
-      Script: {instanceID: 3136}
+      Script: {instanceID: 3162}
     - Class: 114
-      Script: {instanceID: 3542}
+      Script: {instanceID: 3568}
     - Class: 114
-      Script: {instanceID: 4176}
+      Script: {instanceID: 4202}
     - Class: 114
-      Script: {instanceID: 4294}
+      Script: {instanceID: 4320}
     - Class: 114
-      Script: {instanceID: 4628}
+      Script: {instanceID: 4654}
+    - Class: 114
+      Script: {instanceID: 4840}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -585,7 +606,7 @@ ScriptsOnlyBuild:
     className: SpriteShapeController
   - hash:
       serializedVersion: 2
-      Hash: 854e3c85378ceb2cd961184774d26820
+      Hash: 556785a551a6893b314a18200f5676bf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -735,7 +756,7 @@ ScriptsOnlyBuild:
     className: EventTrigger
   - hash:
       serializedVersion: 2
-      Hash: 1a126376324dad57167fc7beaca0cad9
+      Hash: 84dd3daf7e841fa4f0da37f381b5150c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyShooting
@@ -957,6 +978,12 @@ ScriptsOnlyBuild:
     className: ObjectSpin
   - hash:
       serializedVersion: 2
+      Hash: 725ef2f44f006b14aa13fc0e1e02b6fb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AudioManager
+  - hash:
+      serializedVersion: 2
       Hash: 7f15dc44fa1596f1e14059219b1db2e7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -985,6 +1012,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ActivationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: onawake
   - hash:
       serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
@@ -1019,5 +1052,5 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Game.unity
-  playerPath: D:/Desktop/This PC/Programming/Game Development/Last-Hope/Builds/Last
+  playerPath: C:/Users/LENOVO/Desktop/Last Hope/Last-Hope/Builds/Last-Hope-1.2.3-Windowed/Last
     Hope.exe
