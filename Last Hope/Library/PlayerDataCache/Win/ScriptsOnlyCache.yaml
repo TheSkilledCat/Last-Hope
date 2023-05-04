@@ -95,53 +95,53 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1466}
+      Script: {instanceID: 1468}
     - Class: 114
-      Script: {instanceID: 1602}
+      Script: {instanceID: 1582}
     - Class: 114
-      Script: {instanceID: 1710}
+      Script: {instanceID: 1690}
     - Class: 114
-      Script: {instanceID: 1768}
+      Script: {instanceID: 1748}
     - Class: 114
-      Script: {instanceID: 1818}
+      Script: {instanceID: 1798}
     - Class: 114
-      Script: {instanceID: 2138}
+      Script: {instanceID: 2118}
     - Class: 114
-      Script: {instanceID: 2510}
+      Script: {instanceID: 2490}
     - Class: 114
-      Script: {instanceID: 2512}
+      Script: {instanceID: 2492}
     - Class: 114
-      Script: {instanceID: 2662}
+      Script: {instanceID: 2642}
     - Class: 114
-      Script: {instanceID: 2704}
+      Script: {instanceID: 2684}
     - Class: 114
-      Script: {instanceID: 2738}
+      Script: {instanceID: 2718}
     - Class: 114
-      Script: {instanceID: 2836}
+      Script: {instanceID: 2816}
     - Class: 114
-      Script: {instanceID: 2918}
+      Script: {instanceID: 2898}
     - Class: 114
-      Script: {instanceID: 3050}
+      Script: {instanceID: 3030}
     - Class: 114
-      Script: {instanceID: 3162}
+      Script: {instanceID: 3142}
     - Class: 114
-      Script: {instanceID: 3194}
+      Script: {instanceID: 3174}
     - Class: 114
-      Script: {instanceID: 3632}
+      Script: {instanceID: 3612}
     - Class: 114
-      Script: {instanceID: 3642}
+      Script: {instanceID: 3622}
     - Class: 114
-      Script: {instanceID: 3752}
+      Script: {instanceID: 3732}
     - Class: 114
-      Script: {instanceID: 3844}
+      Script: {instanceID: 3824}
     - Class: 114
-      Script: {instanceID: 4202}
+      Script: {instanceID: 4182}
     - Class: 114
-      Script: {instanceID: 4840}
+      Script: {instanceID: 4820}
     - Class: 114
-      Script: {instanceID: 4938}
+      Script: {instanceID: 4918}
     - Class: 114
-      Script: {instanceID: 4950}
+      Script: {instanceID: 4930}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -190,37 +190,37 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1466}
+      Script: {instanceID: 1468}
     - Class: 114
-      Script: {instanceID: 1710}
+      Script: {instanceID: 1690}
     - Class: 114
-      Script: {instanceID: 1818}
+      Script: {instanceID: 1798}
     - Class: 114
-      Script: {instanceID: 2130}
+      Script: {instanceID: 2110}
     - Class: 114
-      Script: {instanceID: 2138}
+      Script: {instanceID: 2118}
     - Class: 114
-      Script: {instanceID: 2510}
+      Script: {instanceID: 2490}
     - Class: 114
-      Script: {instanceID: 2662}
+      Script: {instanceID: 2642}
     - Class: 114
-      Script: {instanceID: 2704}
+      Script: {instanceID: 2684}
     - Class: 114
-      Script: {instanceID: 2836}
+      Script: {instanceID: 2816}
     - Class: 114
-      Script: {instanceID: 3050}
+      Script: {instanceID: 3030}
     - Class: 114
-      Script: {instanceID: 3162}
+      Script: {instanceID: 3142}
     - Class: 114
-      Script: {instanceID: 3568}
+      Script: {instanceID: 3548}
     - Class: 114
-      Script: {instanceID: 4202}
+      Script: {instanceID: 4182}
     - Class: 114
-      Script: {instanceID: 4320}
+      Script: {instanceID: 4300}
     - Class: 114
-      Script: {instanceID: 4654}
+      Script: {instanceID: 4634}
     - Class: 114
-      Script: {instanceID: 4840}
+      Script: {instanceID: 4820}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -606,7 +606,7 @@ ScriptsOnlyBuild:
     className: SpriteShapeController
   - hash:
       serializedVersion: 2
-      Hash: 556785a551a6893b314a18200f5676bf
+      Hash: 93a3f7789112ba22f0ca358cf5edb72c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -738,7 +738,7 @@ ScriptsOnlyBuild:
     className: TMP_TextEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 5c78f4c4547b8f41502a19170997efc3
+      Hash: 8addef01c596e74e1338432de11e9938
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MedKit
@@ -756,7 +756,7 @@ ScriptsOnlyBuild:
     className: EventTrigger
   - hash:
       serializedVersion: 2
-      Hash: 84dd3daf7e841fa4f0da37f381b5150c
+      Hash: 6f7a0005f3d51cf7bc671c7513b86a7d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyShooting
@@ -1048,9 +1048,15 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: TMP_TextEventCheck
+  - hash:
+      serializedVersion: 2
+      Hash: 24e276443cd9ca1bfd9f0ee9ccdf8c47
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerBullet
   platform: 5
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Game.unity
-  playerPath: C:/Users/LENOVO/Desktop/Last Hope/Last-Hope/Builds/Last-Hope-1.2.3-Windowed/Last
+  playerPath: C:/Users/LENOVO/Desktop/Last Hope/Last-Hope/Builds/Last-Hope-1.2.4/Last
     Hope.exe
